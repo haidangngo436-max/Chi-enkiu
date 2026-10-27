@@ -82,7 +82,7 @@ ngay_day timestamp not null,
 ca_hoc varchar(50) not null,
 phong_hoc varchar(50) not null,
 noi_dung varchar(50) not null,
-trang_thai_buoi varchar(50) check(trang_thai_buoi in ('nghi', 'day')) not null,
+trang_thai_buoi varchar(50) check (trang_thai_buoi in ('nghi', 'day')) not null,
 foreign key (id_giao_vien) references Giao_vien(id_giao_vien),
 foreign key(id_lop) references Lop(id_lop)
 );
